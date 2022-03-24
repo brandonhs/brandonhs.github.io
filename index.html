@@ -9,6 +9,48 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/pico.min.css">
+
+        <style>
+            .profile-circle {
+                padding: 50px;
+                min-width: 200px;
+            }
+
+            article {
+                padding: 0;
+                overflow: hidden;
+                margin: 0;
+            }
+
+            .experience {
+                /* max-width: 75%; */
+                margin-top: 2rem;
+            }
+
+            body > main {
+                padding: 1.25rem 0;
+            }
+
+            .experience .container {
+                display: flex;
+                padding: 1rem;
+            }
+
+            .experience .content {
+                padding: 1rem;
+                margin-top: -20px;
+            }
+
+            .experience .container hgroup {
+                justify-content: center;
+            }
+
+            .experience .container img {
+                padding-right: 1rem;
+                width: auto;
+                height: 100px;
+            }
+        </style>
     </head>
     <body>
         <nav class="container-fluid">
@@ -31,14 +73,45 @@
         </nav>
         <main class="container">
             <section id="content">
-                <div class="grid">
+                <div id="header" class="grid">
                     <hgroup>
-                        <h1>brandonhs</h1>
+                        <h1 class="main-text-animation">About Me</h1>
                         <h2>I am a high school Software Engineer and Full Stack Developer with 6 years of experience in advanced programming and IT, along with over 3 years of experience in electrical engineering.</h2>
                     </hgroup>
                     <a href="https://www.linkedin.com/in/brandonhs/" target="_blank">
-                        <img style="padding: 50px; min-width: 200px;" width="300px" src="images/profile-circle.png" />
+                        <img class="profile-circle" width="300px" src="images/profile-circle.png" />
                     </a>
+                </div>
+                <div id="experience">
+                    <hgroup>
+                        <h1>Experience</h1>
+                        <h2>Here is some of my experience</h2>
+                    </hgroup>
+                    <article class="experience">
+                        <div class="container">
+                            <img src="https://avatars.githubusercontent.com/u/84608495?s=200&v=4">
+                            <hgroup>
+                                <h3>DeepWater Exploration</h3>
+                                <h4>Chief Technology Officer, Co-Founder (September 2021 - Present)</h4>
+                            </hgroup>
+                        </div>
+                        <div class="content">
+                            DeepWater Exploration is a startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics.
+                            <a>Read More</a>
+                        </div>
+                    </article>
+                    <article class="experience">
+                        <div class="container">
+                            <img src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Icon.png">
+                            <hgroup>
+                                <h3>FIRST Robotics</h3>
+                                <h4>FRC 687 Member (October 2020 - March 2022)</h4>
+                            </hgroup>
+                        </div>
+                        <div class="content">
+                            I competed in FIRST robotics for 2 years in my freshman and sophomore year of high school. During my time with The NerdHerd (team 687), I gained strong communication skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team.
+                        </div>
+                    </article>
                 </div>
             </header>
         </main>
