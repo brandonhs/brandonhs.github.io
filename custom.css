@@ -25,6 +25,10 @@ article {
     margin-top: 2rem;
 }
 
+#awards {
+    margin-top: 5rem;
+}
+
 body > main {
     padding: 1.25rem 0;
 }
@@ -37,6 +41,10 @@ body > main {
 .experience .content {
     padding: 1rem;
     margin-top: -20px;
+}
+
+.experience .content li {
+    margin-left: 1rem;
 }
 
 .experience .container hgroup {
