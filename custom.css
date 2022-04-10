@@ -16,6 +16,21 @@
     }
 }
 
+.article-dialog {
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+}
+
+.article-dialog footer {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    background-color: var(--card-background-color);
+    border-top: none;
+}
+
 .container {
     padding-top: 25px;
 }
