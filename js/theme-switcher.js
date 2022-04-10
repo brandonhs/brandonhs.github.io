@@ -50,5 +50,3 @@ const themeSwitcher = {
         });
     }
 }
-
-themeSwitcher.init();

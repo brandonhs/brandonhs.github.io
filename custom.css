@@ -16,6 +16,10 @@
     }
 }
 
+.container {
+    padding-top: 25px;
+}
+
 .profile-circle {
     /* padding: 50px; */
     max-width: 350px;

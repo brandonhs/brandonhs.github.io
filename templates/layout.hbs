@@ -1,0 +1,88 @@
+<nav class="container-fluid">
+    <ul>
+        {{#with website}}
+            <li>
+                <a class="contrast" href="{{base_path}}">
+                    <strong>{{title}}</strong>
+                </a>
+            </li>
+        {{/with}}
+
+        {{#with about}}
+            {{#each socials}}
+                <li><a href="{{this.href}}" target="_blank" class="fa fa-{{this.fa_class}}"></a></li>
+            {{/each}}
+        {{/with}}
+
+        <li><a href="#" data-theme-switcher="light" class="fa fa-sun-o"></a></li>
+    </ul>
+</nav>
+<main class="container">
+    <section id="content">
+        <div id="header" class="grid">
+            {{#with about}}
+                <hgroup>
+                    <h1>{{name}}</h1>
+                    <h2>{{bio}}</h2>
+                </hgroup>
+                <div class="profile-circle-container">
+                    <a href="{{image.link}}" style="width: fit-content; height: fit-content; display: inline-block;" target="_blank">
+                        <img class="profile-circle" width="300px" src="{{image.src}}" />
+                    </a>
+                </div>
+            {{/with}}
+        </div>
+
+        <div id="experience">
+            {{#with experience}}
+                <hgroup>
+                    <h1>Experience</h1>
+                    <h2>{{description}}</h2>
+                </hgroup>
+                {{#each cards}}
+                    <article class="experience">
+                        <div class="container">
+                            <img src="{{this.image}}">
+                            <hgroup>
+                                <h3>{{this.title}}</h3>
+                                <h4>
+                                    {{this.position}} ({{#timeperiod}}{{this.start}}:{{this.end}}{{/timeperiod}})
+                                </h4>
+                            </hgroup>
+                        </div>
+                        <div class="content">
+                            {{#markdown}}
+                                {{this.description}}
+                            {{/markdown}}
+                        </div>
+                    </article>
+                {{/each}}
+            {{/with}}
+        </div>
+
+        <div id="awards">
+            {{#with awards}}
+                <hgroup>
+                    <h1>Awards and Achievements</h1>
+                    <h2>{{description}}</h2>
+                </hgroup>
+                {{#each cards}}
+                    <article class="experience">
+                        <div class="container">
+                            <img src="{{this.image}}">
+                            <hgroup>
+                                <h3>{{this.title}}</h3>
+                                <h4>{{this.organization}}</h4>
+                            </hgroup>
+                        </div>
+                        <div class="content">
+                            {{#each this.description}}
+                                {{#markdown}}{{this}}{{/markdown}}
+                            {{/each}}
+                        </div>
+                    </article>
+                {{/each}}
+            {{/with}}
+        </div>
+    </header>
+</main>
