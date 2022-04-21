@@ -51,12 +51,12 @@ article {
     margin-top: 2rem;
 }
 
-#awards {
+.sections > div:not(:first-child) {
     margin-top: 5rem;
 }
 
 body > main {
-    padding: 1.25rem 0;
+    padding: 1.25rem 0
 }
 
 .experience .container {

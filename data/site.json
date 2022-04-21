@@ -28,62 +28,81 @@
             "link": "https://www.linkedin.com/in/brandonhs/"
         }
     },
-    "experience": {
-        "description": "Below is some of my experience.",
-        "cards": [
-            {
-                "image": "/images/external/dwe.jpg",
-                "title": "DeepWater Exploration",
-                "position": "Chief Technology Officer, Co-Founder",
-                "start": "2021-09-29",
-                "description": "DeepWater Exploration is a startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics. [Learn More](https://exploredeepwater.com/pages/about)"
-            },
-            {
-                "image": "/images/external/FIRST-Icon.png",
-                "title": "FIRST Robotics",
-                "position": "FRC 687 Member",
-                "start": "2020-10-01",
-                "end": "2022-05-01",
-                "description": "I competed in FIRST robotics for 2 years in my freshman and sophomore year of high school. During my time with The NerdHerd (team 687), I gained strong communication and leadership skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team."
-            },
-            {
-                "image": "/images/external/csc_logo.png",
-                "title": "CAMS Computer Science & Cybersecurity Club",
-                "position": "Board Member & Director",
-                "start": "2020-09-01",
-                "description": "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field. [See Website](https://camscsc.org/)"
-            }
-        ]
-    },
-    "awards": {
-        "description": "Below are some of my awards and achievements.",
-        "cards": [
-            {
-                "title": "CyberPatriot",
-                "image": "/images/external/CyberPatriot.png",
-                "organization": "Air Force Association",
-                "description": [
-                    "- CP-XIII Gold Division",
-                    "- CP-XIV Platinum Division Semifinalist (Top 150 out of 2500 Open Division teams)"
-                ]
-            },
-            {
-                "title": "Lemelson MIT InvenTeams",
-                "image": "/images/external/lemelson.jpg",
-                "organization": "Massachusetts Institute of Technology",
-                "description": [
-                    "2022 MIT InvenTeam Grant Winner",
-                    "Learn more about our invention and team [here](https://lemelson.mit.edu/teams/california-academy-mathematics-and-science-inventeam)"
-                ]
-            },
-            {
-                "title": "USTA Tennis",
-                "image": "/images/external/usta-logo.png",
-                "organization": "USTA Junior Team Tennis",
-                "description": [
-                    "- Southern California Fall Section Championships 2019"
-                ]
-            }
-        ]
-    }
+    "sections": [
+        {
+            "name": "experience",
+            "title": "Experience",
+            "description": "Below is some of my experience.",
+            "cards": [
+                {
+                    "name": "dwe",
+                    "title": "DeepWater Exploration",
+                    "subtitle": "Chief Technology Officer, Co-Founder",
+                    "image": "/images/external/dwe.jpg",
+                    "start": "2021-09-29",
+                    "description": [
+                        "DeepWater Exploration is a startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics.",
+                        "[Learn More](https://exploredeepwater.com/pages/about)"
+                    ]
+                },
+                {
+                    "name": "camsfrc",
+                    "title": "FIRST Robotics",
+                    "subtitle": "FRC 687 Member",
+                    "image": "/images/external/FIRST-Icon.png",
+                    "start": "2020-10-01",
+                    "end": "2022-05-01",
+                    "description": [
+                        "I competed in FIRST robotics for 2 years in my freshman and sophomore year of high school. During my time with The NerdHerd (team 687), I gained strong communication and leadership skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team."
+                    ]
+                },
+                {
+                    "name": "camscsc",
+                    "title": "CAMS Computer Science & Cybersecurity Club",
+                    "subtitle": "Board Member & Director",
+                    "image": "/images/external/csc_logo.png",
+                    "start": "2020-09-01",
+                    "description": [
+                        "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field. [See Website](https://camscsc.org/)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "awards",
+            "title": "Awards and Achievements",
+            "description": "Below are some of my awards and achievements.",
+            "cards": [
+                {
+                    "name": "cyberpatriot",
+                    "title": "CyberPatriot",
+                    "subtitle": "Air Force Association",
+                    "image": "/images/external/CyberPatriot.png",
+                    "description": [
+                        "- CP-XIII Gold Division",
+                        "- CP-XIV Platinum Division Semifinalist (Top 150 out of 2500 Open Division teams)"
+                    ]
+                },
+                {
+                    "name": "inventeam",
+                    "title": "Lemelson MIT InvenTeams",
+                    "subtitle": "Massachusetts Institute of Technology",
+                    "image": "/images/external/lemelson.jpg",
+                    "description": [
+                        "2022 MIT InvenTeam Grant Winner",
+                        "Learn more about our invention and team [here](https://lemelson.mit.edu/teams/california-academy-mathematics-and-science-inventeam)"
+                    ]
+                },
+                {
+                    "name": "usta-tennis",
+                    "title": "USTA Tennis",
+                    "subtitle": "USTA Junior Team Tennis",
+                    "image": "/images/external/usta-logo.png",
+                    "description": [
+                        "- Southern California Fall Section Championships 2019"
+                    ]
+                }
+            ]
+        }
+    ]
 }

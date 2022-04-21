@@ -30,6 +30,10 @@ async function populate() {
         return parsed;
     });
 
+    Handlebars.registerHelper('isdefined', function(value) {
+        return value !== undefined;
+    });
+
     Handlebars.registerHelper('timeperiod', function(options) {
         let str = options.fn(this);
         let start_end = str.split(':');

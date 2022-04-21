@@ -32,57 +32,39 @@
                 </div>
             {{/with}}
         </div>
-
-        <div id="experience">
-            {{#with experience}}
-                <hgroup>
-                    <h1>Experience</h1>
-                    <h2>{{description}}</h2>
-                </hgroup>
-                {{#each cards}}
-                    <article class="experience">
-                        <div class="container">
-                            <img src="{{this.image}}">
-                            <hgroup>
-                                <h3>{{this.title}}</h3>
-                                <h4>
-                                    {{this.position}} ({{#timeperiod}}{{this.start}}:{{this.end}}{{/timeperiod}})
-                                </h4>
-                            </hgroup>
-                        </div>
-                        <div class="content">
-                            {{#markdown}}
-                                {{this.description}}
-                            {{/markdown}}
-                        </div>
-                    </article>
-                {{/each}}
-            {{/with}}
-        </div>
-
-        <div id="awards">
-            {{#with awards}}
-                <hgroup>
-                    <h1>Awards and Achievements</h1>
-                    <h2>{{description}}</h2>
-                </hgroup>
-                {{#each cards}}
-                    <article class="experience">
-                        <div class="container">
-                            <img src="{{this.image}}">
-                            <hgroup>
-                                <h3>{{this.title}}</h3>
-                                <h4>{{this.organization}}</h4>
-                            </hgroup>
-                        </div>
-                        <div class="content">
-                            {{#each this.description}}
-                                {{#markdown}}{{this}}{{/markdown}}
-                            {{/each}}
-                        </div>
-                    </article>
-                {{/each}}
-            {{/with}}
+        <div id="sections" class="sections">
+            {{#each sections}}
+                <div id="{{this.name}}">
+                    <hgroup>
+                        <h1>{{this.title}}</h1>
+                        <h2>{{this.description}}</h2>
+                    </hgroup>
+                    <div id="cards">
+                        {{#each cards}}
+                            <div id="{{this.name}}">
+                                <article class="experience">
+                                    <div class="container">
+                                        <img src="{{this.image}}">
+                                        <hgroup>
+                                            <h3>{{this.title}}</h3>
+                                            {{#if (isdefined this.start)}}
+                                                <h4>{{this.subtitle}} ({{#timeperiod}}{{this.start}}:{{this.end}}{{/timeperiod}})</h4>
+                                            {{else}}
+                                                <h4>{{this.subtitle}}</h4>
+                                            {{/if}}
+                                        </hgroup>
+                                    </div>
+                                    <div class="content">
+                                        {{#each this.description}}
+                                            {{#markdown}}{{this}}{{/markdown}}
+                                        {{/each}}
+                                    </div>
+                                </article>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            {{/each}}
         </div>
     </header>
 </main>
