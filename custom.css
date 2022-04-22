@@ -46,7 +46,7 @@ article {
     margin: 0;
 }
 
-.experience {
+.card {
     /* max-width: 75%; */
     margin-top: 2rem;
 }
@@ -59,25 +59,25 @@ body > main {
     padding: 1.25rem 0
 }
 
-.experience .container {
+.card .container {
     display: flex;
     padding: 1rem;
 }
 
-.experience .content {
+.card .content {
     padding: 1rem;
     margin-top: -20px;
 }
 
-.experience .content li {
+.card .content li {
     margin-left: 1rem;
 }
 
-.experience .container hgroup {
+.card .container hgroup {
     justify-content: center;
 }
 
-.experience .container img {
+.card .container img {
     padding-right: 1rem;
     width: auto;
     height: 100px;

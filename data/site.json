@@ -1,26 +1,5 @@
 {
-    "website": {
-        "title": "brandonhs",
-        "base_path": "/"
-    },
     "about": {
-        "socials": [
-            {
-                "name": "linkedin",
-                "href": "https://www.linkedin.com/in/brandonhs/",
-                "fa_class": "linkedin"
-            },
-            {
-                "name": "github",
-                "href": "https://github.com/brandonhs",
-                "fa_class": "github"
-            },
-            {
-                "name": "twitter",
-                "href": "https://twitter.com/brandonhstevens",
-                "fa_class": "twitter"
-            }
-        ],
         "name": "Brandon Stevens",
         "bio": "I am a high school Software Engineer and Full Stack Developer with 6 years of experience in advanced programming and IT, along with over 3 years of experience in electrical engineering.",
         "image": {

@@ -1,13 +1,37 @@
+const SITE_URL = document.currentScript.getAttribute('site-url');
+const LAYOUT_URL = document.currentScript.getAttribute('layout-url');
+
 async function getSiteData() {
-    const requestUrl = '/data/site.json';
+    const requestUrl = SITE_URL || '/data/site.json';
     const request = new Request(requestUrl);
     const response = await fetch(request);
     const data = await response.json();
+    data.website = {
+        "title": "brandonhs",
+        "base_path": "/",
+        "socials": [
+            {
+                "name": "linkedin",
+                "href": "https://www.linkedin.com/in/brandonhs/",
+                "fa_class": "linkedin"
+            },
+            {
+                "name": "github",
+                "href": "https://github.com/brandonhs",
+                "fa_class": "github"
+            },
+            {
+                "name": "twitter",
+                "href": "https://twitter.com/brandonhstevens",
+                "fa_class": "twitter"
+            }
+        ]
+    };
     return data;
 }
 
 async function getSiteLayout() {
-    const requestUrl = '/templates/layout.hbs';
+    const requestUrl = LAYOUT_URL || '/templates/layout.hbs';
     const request = new Request(requestUrl);
     const response = await fetch(request);
     const layout = await response.text();
@@ -45,6 +69,10 @@ async function populate() {
         }
         start = moment(start, 'YYYY-MM-DD').format('MMMM Y');
         return `${start} - ${end}`;
+    });
+
+    Handlebars.registerHelper('date', function(options) {
+        return moment(options.fn(this), 'YYYY-MM-DD').format('MMMM Y');
     });
 
     var template = Handlebars.compile(layout);

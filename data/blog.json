@@ -1,0 +1,23 @@
+{
+    "name": "posts",
+    "title": "Blog Posts",
+    "description": "My recent blog posts",
+    "posts": [
+        {
+            "name": "hello-world",
+            "title": "Hello World!",
+            "date": "2022-04-21",
+            "description": [
+                "Explaining the technical aspects of the site and why the answer to the universe is 42."
+            ]
+        },
+        {
+            "name": "why-software",
+            "title": "Why is software empowering the future?",
+            "date": "2022-04-22",
+            "description": [
+                "Software development believed to be the future of technology, even with hardware getting more and more readily available. What exactly makes software such a \"buzz word\" in modern tech?"
+            ]
+        }
+    ]
+}
