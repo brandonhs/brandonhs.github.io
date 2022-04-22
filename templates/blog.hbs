@@ -1,22 +1,3 @@
-<nav class="container-fluid">
-    <ul>
-        {{#with website}}
-            <li>
-                <a class="contrast" href="{{base_path}}">
-                    <strong>{{title}}</strong>
-                </a>
-            </li>
-            {{#each socials}}
-                <li><a href="{{this.href}}" target="_blank" class="fa fa-{{this.fa_class}}"></a></li>
-            {{/each}}
-            <li><a href="#" data-theme-switcher="light" class="fa fa-sun-o"></a></li>
-            {{#each pages}}
-                <li><a href="{{this.path}}">{{this.name}}</a></li>
-            {{/each}}
-        {{/with}}
-
-    </ul>
-</nav>
 <main class="container">
     <section id="content">
         <div id="posts" class="sections">
@@ -31,7 +12,7 @@
                         <article class="card">
                             <div class="container">
                                 <hgroup>
-                                    <h3>{{this.title}}</h3>
+                                    <h3><a href="/blog/{{this.name}}.html">{{this.title}}</a></h3>
                                     <h5>{{#date}}{{this.date}}{{/date}}</h5>
                                 </hgroup>
                                 </div>

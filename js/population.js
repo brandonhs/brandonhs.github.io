@@ -1,52 +1,52 @@
 const SITE_URL = document.currentScript.getAttribute('site-url');
 const LAYOUT_URL = document.currentScript.getAttribute('layout-url');
 
-async function getSiteData() {
-    const requestUrl = SITE_URL || '/data/site.json';
+// replace any data in json with "from: <url>" with data from the url
+async function dataFrom(object) {
+    for (let k of Object.keys(object)) {
+        if (typeof object[k] == 'object') {
+            if ('from' in object[k]) {
+                let data;
+                try {
+                    data = await getData(object[k].from);
+                } catch {
+                    data = await getSiteLayout(object[k].from);
+                }
+                object[k] = data;
+            } else {
+                await dataFrom(object[k]);
+            }
+        }
+    }
+    return object;
+}
+
+async function getData(requestUrl) {
     const request = new Request(requestUrl);
     const response = await fetch(request);
-    const data = await response.json();
-    data.website = {
-        "title": "brandonhs",
-        "base_path": "/",
-        "socials": [
-            {
-                "name": "linkedin",
-                "href": "https://www.linkedin.com/in/brandonhs/",
-                "fa_class": "linkedin"
-            },
-            {
-                "name": "github",
-                "href": "https://github.com/brandonhs",
-                "fa_class": "github"
-            },
-            {
-                "name": "twitter",
-                "href": "https://twitter.com/brandonhstevens",
-                "fa_class": "twitter"
-            }
-        ],
-        "pages": [
-            {
-                "name": "blog",
-                "path": "/blog.html"
-            }
-        ]
-    };
+    var data = await response.json();
+    data = await dataFrom(data);
     return data;
 }
 
-async function getSiteLayout() {
-    const requestUrl = LAYOUT_URL || '/templates/layout.hbs';
-    const request = new Request(requestUrl);
+async function getSiteData(url) {
+    const data = await getData(url);
+    return data;
+}
+
+async function getSiteLayout(url) {
+    const request = new Request(url);
     const response = await fetch(request);
     const layout = await response.text();
     return layout;
 }
 
 async function populate() {
-    const data = await getSiteData();
-    const layout = await getSiteLayout();
+    const data = await getSiteData(SITE_URL || '/data/site.json');
+    const layout = await getSiteLayout(LAYOUT_URL || '/templates/layout.hbs');
+
+    const headerData = await getSiteData('/data/header.json');
+    const headerLayout = await getSiteLayout('/templates/header.hbs');
 
     Handlebars.registerHelper('markdown', function(options) {
         let str = options.fn(this);
@@ -81,8 +81,16 @@ async function populate() {
         return moment(options.fn(this), 'YYYY-MM-DD').format('MMMM D, Y');
     });
 
+    Handlebars.registerHelper('post', function(options) {
+        return marked.parse(options.fn(this));
+    });
+
     var template = Handlebars.compile(layout);
-    const site = template(data);
+    var site = template(data);
+
+    var headerTemplate = Handlebars.compile(headerLayout);
+    var headerSite = headerTemplate(headerData);
+    site = headerSite + site;
 
     const div = document.getElementById('site');
     div.innerHTML = site;

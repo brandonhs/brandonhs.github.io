@@ -4,20 +4,10 @@
     "description": "My recent blog posts",
     "posts": [
         {
-            "name": "hello-world",
-            "title": "Hello World!",
-            "date": "2022-04-21",
-            "description": [
-                "Explaining the technical aspects of the site and why the answer to the universe is 42."
-            ]
+            "from": "/data/posts/hello-world.json"
         },
         {
-            "name": "why-software",
-            "title": "Why is software empowering the future?",
-            "date": "2022-04-22",
-            "description": [
-                "My thoughts on hardware development in an increasingly software world."
-            ]
+            "from": "/data/posts/why-software.json"
         }
     ]
 }

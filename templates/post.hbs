@@ -1,0 +1,17 @@
+<main class="container">
+    <section id="content">
+        <div id="posts" class="sections">
+            <div id="{{name}}">
+                <hgroup>
+                    <h1>{{title}}</h1>
+                    <h2>{{#date}}{{this.date}}{{/date}}</h5>
+                </hgroup>
+                <span>{{description}}</span>
+                <hr>
+                <br>
+            <div id="post">
+                {{#post}}{{content}}{{/post}}
+            </div>
+        </div>
+    </header>
+</main>
