@@ -9,6 +9,25 @@
     },
     "sections": [
         {
+            "name": "education",
+            "title": "Education",
+            "description": "Below is my education and educational accomplishments.",
+            "cards": [
+                {
+                    "name": "cams",
+                    "title": "California Academy of Mathematics and Science (CAMS)",
+                    "subtitle": "Class of 2024",
+                    "start": "2020-08-18",
+                    "image": "/images/external/cams.png",
+                    "description": [
+                        "The California Academy of Mathematics & Science is a four year application-based public high school seeking to increase the nation’s pool of graduates in mathematics and science.",
+                        "",
+                        "At CAMS, I have connected with an alumni network, amazing teachers, and dedicated STEM students. As CAMS is on the CSUDH Campus, we as students are able to dual enroll in both high school and university as well as community colleges such as LBCC."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "experience",
             "title": "Experience",
             "description": "Below is some of my experience.",
@@ -20,8 +39,9 @@
                     "image": "/images/external/dwe.jpg",
                     "start": "2021-09-29",
                     "description": [
-                        "DeepWater Exploration is a startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics.",
-                        "[Learn More](https://exploredeepwater.com/pages/about)"
+                        "DeepWater Exploration is a startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics. [Learn More](https://exploredeepwater.com/pages/about)",
+                        "",
+                        "While working at DWE, I have gained extensive experience in IOT and Marine Robotics. Using my past knowledge with video streaming, linux devices, and server technologies, I have been able to lead a variety of our software-oriented projects, including a dedicated device driver, streaming application, forums, and documentation."
                     ]
                 },
                 {
@@ -42,7 +62,8 @@
                     "image": "/images/external/csc_logo.png",
                     "start": "2020-09-01",
                     "description": [
-                        "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field. [See Website](https://camscsc.org/)"
+                        "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field.",
+                        "[See Website](https://camscsc.org/)"
                     ]
                 }
             ]
@@ -69,7 +90,7 @@
                     "image": "/images/external/lemelson.jpg",
                     "description": [
                         "2022 MIT InvenTeam Grant Winner",
-                        "Learn more about our invention and team [here](https://lemelson.mit.edu/teams/california-academy-mathematics-and-science-inventeam)"
+                        "- Learn more about our invention and team [here](https://lemelson.mit.edu/teams/california-academy-mathematics-and-science-inventeam)"
                     ]
                 },
                 {

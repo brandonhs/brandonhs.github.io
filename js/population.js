@@ -25,6 +25,12 @@ async function getSiteData() {
                 "href": "https://twitter.com/brandonhstevens",
                 "fa_class": "twitter"
             }
+        ],
+        "pages": [
+            {
+                "name": "blog",
+                "path": "/blog.html"
+            }
         ]
     };
     return data;
@@ -72,7 +78,7 @@ async function populate() {
     });
 
     Handlebars.registerHelper('date', function(options) {
-        return moment(options.fn(this), 'YYYY-MM-DD').format('MMMM Y');
+        return moment(options.fn(this), 'YYYY-MM-DD').format('MMMM D, Y');
     });
 
     var template = Handlebars.compile(layout);
