@@ -82,3 +82,8 @@ body > main {
     width: auto;
     height: 100px;
 }
+
+img[alt="DWE QGroundControl"], img[alt="docs"], img[alt="driverui"] {
+    max-height: 800px;
+    width: auto;
+}
