@@ -11,7 +11,7 @@
         {
             "name": "blog",
             "title": "Posts",
-            "description": "Below are my featured blog posts",
+            "description": "Below are my featured blog posts.",
             "cards": [
                 {
                     "from": "/data/posts/hello-world.json",
@@ -20,6 +20,21 @@
                 {
                     "from": "/data/posts/deepwater-exploration.json",
                     "link": "/blog/deepwater-exploration.html"
+                }
+            ]
+        },
+        {
+            "name": "patents",
+            "title": "Patents",
+            "description": "These are the patents I was an inventor of.",
+            "cards": [
+                {
+                    "name": "submersible-camera-for-underwater-vehicles",
+                    "title": "Submersible Camera For Underwater Vehicles",
+                    "date": "2022-04-23",
+                    "description": [
+                        "**Application Number: 63334108**: A submersible camera designed for underwater vehicles, surface vehicles, etc. The invention is a unique design that utilizes few components, minimal size, low production cost, high depth rating, high reliability, and wide compatibility with systems via an onboard processor."
+                    ]
                 }
             ]
         },
