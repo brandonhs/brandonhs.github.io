@@ -29,6 +29,7 @@ Project Screenshot:
 ### DeepWater Exploration Documenation
 
 Project Link: https://github.com/DeepwaterExploration/DeepwaterExplorationDocs
+
 Site Link: https://docs.exploredeepwater.com/
 
 The DeepWater Exploration Documentation website was created using sphinx and the furo theme. A VPS is used as a backend to enable cloud based deployment and builds. Additionally, a private test deployment service is utilized to remotely deploy and test builds live without the need for an installed or virtualized environment. The code and site information are licensed under the MIT license to ensure all information can be made publically accessible at no cost to users.
