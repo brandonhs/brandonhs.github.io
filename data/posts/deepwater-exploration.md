@@ -2,6 +2,8 @@
 
 In September of 2021, I joined a project that I could tell was going places. Barely 3 months later, I found myself, a sophomore in high school, working with a team of college and university students, as the Chief Technology Officer of a tech startup. DeepWater Exploration is a company that currently develops high quality underwater cameras and ROV equipment.
 
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDFront1_720x.jpg)
+
 ## Projects
 
 Over the course of the 8 months I have been a part of DeepWater Exploration, I have led and developed [several projects](https://github.com/DeepwaterExploration).
