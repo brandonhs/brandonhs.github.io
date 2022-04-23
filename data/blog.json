@@ -7,6 +7,9 @@
             "from": "/data/posts/hello-world.json"
         },
         {
+            "from": "/data/posts/deepwater-exploration.json"
+        },
+        {
             "from": "/data/posts/why-software.json"
         }
     ]
