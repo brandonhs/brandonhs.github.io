@@ -15,12 +15,13 @@
                                     <h3><a href="/blog/{{this.name}}.html">{{this.title}}</a></h3>
                                     <h5>{{#date}}{{this.date}}{{/date}}</h5>
                                 </hgroup>
-                                </div>
-                                <div class="content">
-                                    {{#each this.description}}
-                                        {{#markdown}}{{this}}{{/markdown}}
-                                    {{/each}}
-                                </div>
+                            </div>
+                            <div class="content">
+                                {{#each this.description}}
+                                    {{#markdown}}{{this}}{{/markdown}}
+                                {{/each}}
+                                <a href="/blog/{{this.name}}.html">Read Post</a>
+                            </div>
                         </article>
                     </div>
                 {{/each}}
