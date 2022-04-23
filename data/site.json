@@ -9,6 +9,21 @@
     },
     "sections": [
         {
+            "name": "blog",
+            "title": "Posts",
+            "description": "Below are my featured blog posts",
+            "cards": [
+                {
+                    "from": "/data/posts/hello-world.json",
+                    "link": "/blog/hello-world.html"
+                },
+                {
+                    "from": "/data/posts/deepwater-exploration.json",
+                    "link": "/blog/deepwater-exploration.html"
+                }
+            ]
+        },
+        {
             "name": "education",
             "title": "Education",
             "description": "Below is my education and educational accomplishments.",

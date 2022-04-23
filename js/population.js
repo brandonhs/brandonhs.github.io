@@ -9,10 +9,14 @@ async function dataFrom(object) {
                 let data;
                 try {
                     data = await getData(object[k].from);
+                    object[k] = {
+                        ...object[k],
+                        ...data
+                    };
                 } catch {
                     data = await getSiteLayout(object[k].from);
+                    object[k] = data;
                 }
-                object[k] = data;
             } else {
                 await dataFrom(object[k]);
             }
