@@ -1,0 +1,27 @@
+{
+    "basePath": "/",
+    "title": "brandonhs",
+    "pages": [
+        {
+            "name": "blog",
+            "path": "/blog"
+        }
+    ],
+    "socials": [
+        {
+            "name": "linkedin",
+            "href": "https://www.linkedin.com/in/brandonhs/",
+            "fa_class": "linkedin"
+        },
+        {
+            "name": "github",
+            "href": "https://github.com/brandonhs",
+            "fa_class": "github"
+        },
+        {
+            "name": "twitter",
+            "href": "https://twitter.com/brandonhstevens",
+            "fa_class": "twitter"
+        }
+    ]
+}

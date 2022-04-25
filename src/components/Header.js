@@ -1,4 +1,10 @@
 export default function Header(props) {
+    let pages = [];
+    for (let page of props.pages) {
+        pages.push(<a href={page.path}>{page.name}</a>)
+    }
+    let socials = [];
+    
     return (
         <nav className="container-fluid">
             <ul>
@@ -7,6 +13,7 @@ export default function Header(props) {
                         <strong>{props.title}</strong>
                     </a>
                 </li>
+                {pages}
             </ul>
         </nav>
     )
