@@ -75,17 +75,6 @@
                     ]
                 },
                 {
-                    "name": "camsfrc",
-                    "title": "FIRST Robotics",
-                    "subtitle": "FRC 687 Member",
-                    "image": "/images/external/FIRST-Icon.png",
-                    "start": "2020-10-01",
-                    "end": "2022-05-01",
-                    "description": [
-                        "I competed in FIRST robotics for 2 years in my freshman and sophomore year of high school. During my time with The NerdHerd (team 687), I gained strong communication and leadership skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team."
-                    ]
-                },
-                {
                     "name": "camscsc",
                     "title": "CAMS Computer Science & Cybersecurity Club",
                     "subtitle": "President, Former Workshop Director",
@@ -94,6 +83,17 @@
                     "description": [
                         "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field.",
                         "[See Website](https://camscsc.org/)"
+                    ]
+                },
+                {
+                    "name": "camsfrc",
+                    "title": "FIRST Robotics",
+                    "subtitle": "FRC 687 Member",
+                    "image": "/images/external/FIRST-Icon.png",
+                    "start": "2020-10-01",
+                    "end": "2022-05-01",
+                    "description": [
+                        "I competed in FIRST robotics for 2 years in my freshman and sophomore year of high school. During my time with The NerdHerd (team 687), I gained strong communication and leadership skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team."
                     ]
                 }
             ]
