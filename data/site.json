@@ -86,15 +86,24 @@
                     ]
                 },
                 {
-                    "name": "camsfrc",
-                    "title": "FIRST Robotics",
+                    "name": "jetstream",
+                    "title": "JetStream 2710",
                     "subtitle": "FRC 2710 Member",
-                    "image": "/images/external/FIRST-Icon.png",
-                    "start": "2020-10-01",
+                    "image": "/images/external/JetStream Logo Square.png",
+                    "start": "2022-11-01",
                     "description": [
-                        "I competed in FIRST Robotics at my high school for 2 years in my freshman and sophomore year. During my time with The NerdHerd (team 687, my high school team), I gained strong communication and leadership skills. On the programming subteam, I focused mostly on working with Java and a custom framework designed by the team.",
-                        "",
-                        "Due to the large size of the FIRST Robotics team at my high school, I have decided to take the leap and join a local community team, [JetStream (team 2710)](https://jetstream2710.com/). This team aligns closely with my beliefs and with the size being less than a 16th of that of my school team, I get more opportunities to work closely with the robot and other team members."
+                        "[JetStream FRC#2710](https://jetstream2710.com/) is a community-based FRC team founded in November 2017. Student team members hail from several public and private high schools and home school programs in the South Bay area of Los Angeles. As a small community team, there are many opportunities for involvement and making an impact on the community around us."
+                    ]
+                },
+                {
+                    "name": "nerdherd",
+                    "title": "The NerdHerd 687",
+                    "subtitle": "FRC 687 Member",
+                    "image": "/images/external/nerdherd.jpg",
+                    "start": "2020-10-01",
+                    "end": "2022-05-01",
+                    "description": [
+                        "I was a member of CAMS FRC for 2 years in my freshman and sophomore year of high school. During my experience, I learned valuable communication skills due to the large size of the team. As a programmer, I worked on the robot code in java."
                     ]
                 }
             ]
