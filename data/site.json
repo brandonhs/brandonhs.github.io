@@ -1,7 +1,7 @@
 {
     "about": {
         "name": "Brandon Stevens",
-        "bio": "I am a high school Software Engineer and Full Stack Developer with 6 years of experience in advanced programming and IT, along with over 3 years of experience in electrical engineering. I am currently the Chief Product Officer (CPO) and Co-Founder in a profitable underwater technology startup called DeepWater Exploration.",
+        "bio": "I am a Software Engineer and Full Stack Developer with 6 years of experience in advanced programming and IT, along with over 3 years of experience in electrical engineering. I am currently the Chief Product Officer (CPO) and Co-Founder in a profitable underwater technology startup called DeepWater Exploration.",
         "image": {
             "src": "/images/new-profile-circle.png",
             "link": "https://www.linkedin.com/in/brandonhs/"
@@ -31,9 +31,11 @@
                 {
                     "name": "submersible-camera-for-underwater-vehicles",
                     "title": "Submersible Camera For Underwater Vehicles",
-                    "date": "2022-04-23",
+                    "date": "2022-10-26",
                     "description": [
-                        "**Application Number: 63334108**: A submersible camera designed for underwater vehicles, surface vehicles, etc. The invention is a unique design that utilizes few components, minimal size, low production cost, high depth rating, high reliability, and wide compatibility with systems via an onboard processor."
+                        "**20230341750** - A submersible camera designed for underwater vehicles, surface vehicles, etc. The invention is a unique design that utilizes few components, minimal size, low production cost, high depth rating, high reliability, and wide compatibility with systems via an onboard processor.",
+                        "",
+                        "[View Patent](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20230341750)"
                     ]
                 }
             ]
@@ -121,7 +123,7 @@
                     "description": [
                         "- CP-XIII Gold Division",
                         "- CP-XIV Platinum Division Semifinalist (Top 150 out of 2500 Open Division teams)",
-                        "- CP-XV (Top 70 so far out of more than 2000 Open Division teams)"
+                        "- CP-XV (Top 70 out of more than 2000 Open Division teams)"
                     ]
                 },
                 {
