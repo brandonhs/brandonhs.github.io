@@ -1,25 +1,27 @@
 {
     "about": {
         "name": "Brandon Stevens",
-        "bio": "I am a Software Engineer and Full Stack Developer with 6 years of experience in advanced programming and IT, along with over 3 years of experience in electrical engineering. I am currently the Chief Product Officer (CPO) and Co-Founder in a profitable underwater technology startup called DeepWater Exploration.",
+        "bio": "I am a Software Engineer and Full Stack Developer. Chief Product Officer (CPO) and Co-Founder @ DWE.ai.",
         "image": {
-            "src": "/images/new-profile-circle.png",
+            "src": "/images/pfp.png",
             "link": "https://www.linkedin.com/in/brandonhs/"
         }
     },
     "sections": [
         {
-            "name": "blog",
-            "title": "Posts",
-            "description": "Below are my featured blog posts.",
+            "name": "experience",
+            "title": "Experience",
+            "description": "Below is some of my experience.",
             "cards": [
                 {
-                    "from": "/data/posts/hello-world.json",
-                    "link": "/blog/hello-world.html"
-                },
-                {
-                    "from": "/data/posts/deepwater-exploration.json",
-                    "link": "/blog/deepwater-exploration.html"
+                    "name": "dwe",
+                    "title": "DeepWater Exploration Inc.",
+                    "subtitle": "Chief Product Officer, Co-Founder",
+                    "image": "/images/external/dwe.jpg",
+                    "start": "2021-09-29",
+                    "description": [
+                        "[DWE.ai](https://dwe.ai) is committed to providing cutting-edge computer vision and perception solutions for a variety of machines, including underwater robots, surface vehicles, and rugged aerial drones. We enable engineers across industries to build intelligent systems that enhance their efficiency and capabilities. With innovative technologies, expertise, and a commitment to excellence, we are pushing the boundaries of what's possible with subsea robotics and systems."
+                    ]
                 }
             ]
         },
@@ -41,76 +43,6 @@
             ]
         },
         {
-            "name": "education",
-            "title": "Education",
-            "description": "Below is my education and educational accomplishments.",
-            "cards": [
-                {
-                    "name": "cams",
-                    "title": "California Academy of Mathematics and Science (CAMS)",
-                    "subtitle": "Class of 2024",
-                    "start": "2020-08-18",
-                    "image": "/images/external/cams.png",
-                    "description": [
-                        "The California Academy of Mathematics & Science is a four year application-based public high school seeking to increase the nation's pool of graduates in mathematics and science.",
-                        "",
-                        "At CAMS, I have connected with an alumni network, amazing teachers, and dedicated STEM students. As CAMS is on the CSUDH Campus, we as students are able to dual enroll in both high school and university as well as community colleges such as LBCC."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "experience",
-            "title": "Experience",
-            "description": "Below is some of my experience.",
-            "cards": [
-                {
-                    "name": "dwe",
-                    "title": "DeepWater Exploration Inc.",
-                    "subtitle": "Chief Product Officer, Co-Founder",
-                    "image": "/images/external/dwe.jpg",
-                    "start": "2021-09-29",
-                    "description": [
-                        "DeepWater Exploration is a hardware startup that empowers the future of deep-water exploration through the production of high quality components for ROV, AUV, and Marine robotics. [Learn More](https://exploredeepwater.com/pages/about)",
-                        "",
-                        "While working at DWE, I have gained extensive experience in IOT and Marine Robotics. Using my past knowledge with video streaming, linux devices, and server technologies, I have been able to lead a variety of our software-oriented projects, including a dedicated device driver, streaming application, forums, and documentation. Since I joined the team in September of 2021, we have successfully incorporated with I having created a full suite of software capable of driving sales. Read more about my specific projects in my [blog post](/blog/deepwater-exploration.html)."
-                    ]
-                },
-                {
-                    "name": "camscsc",
-                    "title": "CAMS Computer Science & Cybersecurity Club",
-                    "subtitle": "President, Former Workshop Director",
-                    "image": "/images/external/csc_logo.png",
-                    "start": "2020-09-01",
-                    "description": [
-                        "While still in high school, I have been working to develop my school's computer science and cybersecurity programs. I have helped organize events, lead workshops, and design curriculum for students to learn and develop a passion in the field.",
-                        "[See Website](https://camscsc.org/)"
-                    ]
-                },
-                {
-                    "name": "jetstream",
-                    "title": "JetStream 2710",
-                    "subtitle": "FRC 2710 Member",
-                    "image": "/images/external/JetStream Logo Square.png",
-                    "start": "2022-11-01",
-                    "description": [
-                        "[JetStream FRC#2710](https://jetstream2710.com/) is a community-based FRC team founded in November 2017. Student team members hail from several public and private high schools and home school programs in the South Bay area of Los Angeles. As a small community team, there are many opportunities for involvement and making an impact on the community around us."
-                    ]
-                },
-                {
-                    "name": "nerdherd",
-                    "title": "The NerdHerd 687",
-                    "subtitle": "FRC 687 Member",
-                    "image": "/images/external/nerdherd.jpg",
-                    "start": "2020-10-01",
-                    "end": "2022-05-01",
-                    "description": [
-                        "I was a member of CAMS FRC for 2 years in my freshman and sophomore year of high school. During my experience, I learned valuable communication skills due to the large size of the team. As a programmer, I worked on the robot code in java."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "awards",
             "title": "Awards and Achievements",
             "description": "Below are some of my awards and achievements.",
@@ -122,8 +54,8 @@
                     "image": "/images/external/CyberPatriot.png",
                     "description": [
                         "- CP-XIII Gold Division",
-                        "- CP-XIV Platinum Division Semifinalist (Top 150 out of 2500 Open Division teams)",
-                        "- CP-XV (Top 70 out of more than 2000 Open Division teams)"
+                        "- CP-XIV Platinum Division Semifinalist",
+                        "- CP-XV Platinum Division Semifinalist"
                     ]
                 },
                 {
@@ -132,8 +64,7 @@
                     "subtitle": "Massachusetts Institute of Technology",
                     "image": "/images/external/lemelson.jpg",
                     "description": [
-                        "2022 MIT InvenTeam Grant Winner",
-                        "- Learn more about our invention and team [here](https://lemelson.mit.edu/teams/california-academy-mathematics-and-science-inventeam)"
+                        "2022 MIT InvenTeam Grant Winner"
                     ]
                 }
             ]
