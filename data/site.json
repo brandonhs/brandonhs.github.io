@@ -1,9 +1,9 @@
 {
     "about": {
         "name": "Brandon Stevens",
-        "bio": "I am a Software Engineer and Full Stack Developer. Chief Product Officer (CPO) and Co-Founder @ DWE.ai.",
+        "bio": "co-founder @ dwe.ai",
         "image": {
-            "src": "/images/pfp.png",
+            "src": "/images/pfp-2025.png",
             "link": "https://www.linkedin.com/in/brandonhs/"
         }
     },
@@ -16,7 +16,7 @@
                 {
                     "name": "dwe",
                     "title": "DeepWater Exploration Inc.",
-                    "subtitle": "Chief Product Officer, Co-Founder",
+                    "subtitle": "cpo & co-founder",
                     "image": "/images/external/dwe.jpg",
                     "start": "2021-09-29",
                     "description": [
